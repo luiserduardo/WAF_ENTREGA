@@ -1,0 +1,20 @@
+# Usa la imagen oficial de Node.js v20 como base
+FROM node:20-alpine
+
+# Establece el directorio de trabajo en el contenedor
+WORKDIR /app
+
+# Copia el package.json y el package-lock.json al directorio de trabajo
+COPY package*.json ./
+
+# Instala las dependencias
+RUN npm install
+
+# Copia todo el contenido del proyecto al directorio de trabajo
+COPY . .
+
+# Expone el puerto en el que la aplicación va a correr (normalmente 8080 en Vue)
+EXPOSE 80
+
+# Comando por defecto para ejecutar la aplicación
+CMD ["npm", "run", "serve"]
