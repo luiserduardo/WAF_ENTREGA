@@ -1,7 +1,7 @@
 # Nombre del Proyecto: Aplicación web de gestión de doncetes
 
 ## Descripción
-## Proyecto fullstack utilizando React para el frontend, MySQL para la base de datos y Docker para la contenización, que consta de tres partes backend donde por medio de express se hace la conexión con base de datos llamada "profesores_db", fronted por medio de react se carga una pagina princpal donde el usuario puede visualizar los docentes almacenados en la base de datos, se posee un opción para agregar un nuevo usuario recargando los existentes. Tanto del lado del "Frontend" como el "Backend" se tiene un Dockerfile que da las intrciciones para contruir una imagen, para poder hacer uso de la base de datos se hace uso de volumenes, para que levantar los servicios de manera coordinada se hace uso de "docker-compose.ymk" archivo para construir y ejecutar de manera conjunta
+Proyecto fullstack utilizando React para el frontend, MySQL para la base de datos y Docker para la contenización, que consta de tres partes backend donde por medio de express se hace la conexión con base de datos llamada "profesores_db", fronted por medio de react se carga una pagina princpal donde el usuario puede visualizar los docentes almacenados en la base de datos, se posee un opción para agregar un nuevo usuario recargando los existentes. Tanto del lado del "Frontend" como el "Backend" se tiene un Dockerfile que da las intrciciones para contruir una imagen, para poder hacer uso de la base de datos se hace uso de volumenes, para que levantar los servicios de manera coordinada se hace uso de "docker-compose.ymk" archivo para construir y ejecutar de manera conjunta
 
 ## Tecnológias utilizadas:
 
