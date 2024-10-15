@@ -92,7 +92,7 @@ Una vez finalizada la creación de las imágenes y el contenedor, debe aparecer 
 
 
 6. ** Desplegar imagenes**:
-   Nos desplazamos a Docker Desktop y nos dirigiemos a contendores, verificamos que se esta correinedo e ingresamos a [http://localhost:3000/](http://localhost:3000/).
+   Nos desplazamos a Docker Desktop y nos dirigiemos a contendores, verificamos que se esta corriendo e ingresamos a [http://localhost:3000/](http://localhost:3000/).
 
 ![imagen](https://github.com/user-attachments/assets/3fd986e9-8be5-4885-8b66-700e954ec716)
 
