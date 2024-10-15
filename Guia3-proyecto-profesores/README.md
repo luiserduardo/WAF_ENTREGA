@@ -101,8 +101,10 @@ Una vez finalizada la creación de las imágenes y el contenedor, debe aparecer 
 
 
    ## Actividad complementaria:
--Modifica el proyecto para agregar profesores a la tabla: En la parte centrarl se agrego un campo para agregar nuevos usuarios
+-Modifica el proyecto para agregar profesores a la tabla: En la parte centrarl se agrego un campo para agregar nuevos 
+
 -Agregar un estilo a la vista de la tabla: se centro el componente que permite agrega y se mejoro.
+
 ![imagen](https://github.com/user-attachments/assets/cd35adf9-1442-4112-bd9f-9e1842116a08)
 
 
