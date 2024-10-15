@@ -1,20 +1,20 @@
-# Usa la imagen oficial de Node.js v20 como base
-FROM node:20-alpine
+# Fase de construcción
+FROM node:20-alpine AS build
 
-# Establece el directorio de trabajo en el contenedor
 WORKDIR /app
 
-# Copia el package.json y el package-lock.json al directorio de trabajo
 COPY package*.json ./
+RUN npm ci
 
-# Instala las dependencias
-RUN npm install
-
-# Copia todo el contenido del proyecto al directorio de trabajo
 COPY . .
+RUN npm run build
 
-# Expone el puerto en el que la aplicación va a correr (normalmente 8080 en Vue)
+FROM nginx:alpine
+
+COPY --from=build /app/dist /usr/share/nginx/html
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 EXPOSE 80
 
-# Comando por defecto para ejecutar la aplicación
-CMD ["npm", "run", "serve"]
+CMD ["nginx", "-g", "daemon off;"]
