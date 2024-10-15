@@ -74,12 +74,24 @@ Dado que se cuenta con un dockerfile, únicamente será necesario ejecutar el si
 ![imagen](https://github.com/user-attachments/assets/4eaac6da-78ec-4731-9c24-e3dc58817352)
 
 Una vez finalizada la creación de las imágenes y el contenedor, debe aparecer la siguiente pantalla:
+![imagen](https://github.com/user-attachments/assets/4bf14166-e5c9-4a61-a9d7-f5008df0f9b5)
+
 
 6. ** Desplegar imagenes**:
    Nos desplazamos a Docker Desktop y nos dirigiemos a contendores, verificamos que se esta corriendo e ingresamos a [http://localhost:8080/](http://localhost:8080/).
+   
+   ![imagen](https://github.com/user-attachments/assets/9da65199-ae62-40cd-83b7-e10253834955)
 
+7. ** Subir Imagen a Docker Hub**:
+Con la imagen etiquetada se ejecuta el siguiente comando para subirla "docker push eduaro12/guia5:latest ". Una vez finalizada podremos hacer uso y depleglar el proyecto
+![imagen](https://github.com/user-attachments/assets/8c699147-0747-45b8-ab4f-6f1f227a8c9f)
+
+Link:  https://hub.docker.com/r/eduaro12/guia5/tags 
+
+https://hub.docker.com/r/eduaro12/guia5/tags
 
    **ACTIVIDAD COMPLEMENTARIA**:
+   
 -Estilización de Tarjetas de Personajes: Mejorar la presentación de las tarjetas aplicando:Sombra con box-shadow.Bordes redondeados con border-radius.Efecto de hover para agrandar la imagen al pasar el cursor.
 
 -Paginación de Personajes: Implementar un sistema de paginación para navegar entre personajes:Botones para avanzar y retroceder páginas.
@@ -90,7 +102,10 @@ Una vez finalizada la creación de las imágenes y el contenedor, debe aparecer 
 
 -Responsive Design: Asegurar que la aplicación funcione correctamente en dispositivos móviles y diferentes tamaños de pantalla
 
+-Subir la imagen a Docker-Hub: https://hub.docker.com/r/eduaro12/guia5/tags 
+
 ![imagen](https://github.com/user-attachments/assets/24226ed6-c3a0-4384-8c6d-28c438a53807)
+
 
 
 
