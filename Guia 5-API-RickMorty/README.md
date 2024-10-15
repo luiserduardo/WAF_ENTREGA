@@ -1,7 +1,7 @@
 # Nombre del Proyecto: Consumo de API de Rick and Morty
 
 ## Descripción
-Este proyecto consiste en una interfaz visual que consume un API publica de Rick and Morty, haaciendo uso de "axios", cargando los componentes en distintas tarjetas donde se puede visualizar la infomración, se tiene un apartao de busqueda y filtro de los persoajes. El proyecto está conformado por cuatro componentes
+Este proyecto consiste en una interfaz visual que consume un API publica de Rick and Morty, haaciendo uso de "axios", cargando los componentes en distintas tarjetas donde se puede visualizar la información, se tiene un apartado de búsqueda y filtro de los persoajes. El proyecto está conformado por cuatro componentes
 
 - **HeaderSite**: Es una cabecera con el nombre del estudiante
 - **CharacterList**: Componente en el cual se muestran los elementos recuperados por medio de axios de la API
@@ -45,4 +45,53 @@ Este proyecto consiste en una interfaz visual que consume un API publica de Rick
 
 
  3. **Probar funcionamiento**:
+   Una vez instaladas las dependencias, ejecuta el comando `npm run serve`. Debes obtener la siguiente respuesta:
+
+![imagen](https://github.com/user-attachments/assets/1687ce6e-c0f2-45eb-9e79-c8cdf972a323)
+
+![imagen](https://github.com/user-attachments/assets/553af993-1b0c-48da-b031-d48274c3b1bb)
+ 
+ Verificamos que se esta corriendo e ingresamos a [http://localhost:8080/](http://localhost:8080/).
+
+
+ ![imagen](https://github.com/user-attachments/assets/75a745c6-e535-44b1-a5a8-5236dd5e014b)
+
+ Con ello ya podremos visualizar los personajes y hacer uso de las opciones de filtrado.
+![imagen](https://github.com/user-attachments/assets/96e0b3b6-9104-403d-80d1-a20f974524ec)
+
+## **Contenización**:
+
+4. **Abrir Docker Desktop e iniciar sesión**
+Abre Docker Desktop e inicia sesión con tu usuario. Si aún no tienes Docker Desktop instalado, puedes seguir esta guía: [Guía de instalación](https://www.youtube.com/watch?v=jiJFDwmWrWk).
+
+5. **Crear imagenes**
+Accede a la terminal en la carpeta del proyecto y ejecuta el comando `docker login`. Deberías ver un mensaje de confirmación que indica que has iniciado sesión correctamente.
+
+![imagen](https://github.com/user-attachments/assets/af5eb11d-2cf4-4797-a58b-9c7999ee4976)
+
+Dado que se cuenta con un dockerfile, únicamente será necesario ejecutar el siguiente comando "docker build -t rickmorty:latest . "
+
+![imagen](https://github.com/user-attachments/assets/4eaac6da-78ec-4731-9c24-e3dc58817352)
+
+Una vez finalizada la creación de las imágenes y el contenedor, debe aparecer la siguiente pantalla:
+
+6. ** Desplegar imagenes**:
+   Nos desplazamos a Docker Desktop y nos dirigiemos a contendores, verificamos que se esta corriendo e ingresamos a [http://localhost:8080/](http://localhost:8080/).
+
+
+   **ACTIVIDAD COMPLEMENTARIA**:
+-Estilización de Tarjetas de Personajes: Mejorar la presentación de las tarjetas aplicando:Sombra con box-shadow.Bordes redondeados con border-radius.Efecto de hover para agrandar la imagen al pasar el cursor.
+
+-Paginación de Personajes: Implementar un sistema de paginación para navegar entre personajes:Botones para avanzar y retroceder páginas.
+
+-Usar propiedades next y prev de la API para cargar las páginas correspondientes.
+
+-Campo de Búsqueda:Permitir filtrar personajes por nombre y estado (vivo/muerto/desconocido).Incluir un campo de texto para buscar por nombre y un menú desplegable para filtrar por estado.
+
+-Responsive Design: Asegurar que la aplicación funcione correctamente en dispositivos móviles y diferentes tamaños de pantalla
+
+![imagen](https://github.com/user-attachments/assets/24226ed6-c3a0-4384-8c6d-28c438a53807)
+
+
+
 
